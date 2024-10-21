@@ -1,0 +1,35 @@
+.error-div {
+  /* width: 600px; */
+  padding: 70px 60px;
+  background-color: hsl(217, 19%, 24%);
+  position: relative;
+  border-radius: 5px;
+}
+
+.try-again-button {
+  background-color: hsl(150, 100%, 66%);
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+}
+
+@media (max-width: 475px) {
+  .error-div {
+    width: 90%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .try-again-button {
+    position: unset;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
